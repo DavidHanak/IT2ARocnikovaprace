@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IT2ARocniProjekt/1.0.0": {
+        "runtime": {
+          "IT2ARocniProjekt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IT2ARocniProjekt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
