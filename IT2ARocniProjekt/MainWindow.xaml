@@ -4,14 +4,14 @@
         Title="🌵 Šerif Adam - Western Polda" Height="650" Width="950"
         Background="#3d2b1f" WindowStartupLocation="CenterScreen">
 
-   <Grid>
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        
+        <!-- Nadpis -->
         <Border Background="#8b5a2b" Padding="10">
             <TextBlock Text="🌵 ŠERIF ADAM 🌵" FontSize="32" FontWeight="Bold" 
                        Foreground="#f5d9b0" HorizontalAlignment="Center"/>
@@ -19,6 +19,21 @@
 
         
         <Canvas x:Name="scene" Grid.Row="1" Background="#5c4033" Margin="10">
+
+            
+            <Rectangle Canvas.Top="380" Width="900" Height="150" Fill="#8b5a2b" Opacity="0.6"/>
+
+            
+            <Rectangle Canvas.Left="150" Canvas.Top="320" Width="120" Height="20" Fill="#3d2b1f"/>
+            <Rectangle Canvas.Left="170" Canvas.Top="340" Width="15" Height="60" Fill="#3d2b1f"/>
+            <Rectangle Canvas.Left="240" Canvas.Top="340" Width="15" Height="60" Fill="#3d2b1f"/>
+
+            
+            <Rectangle Canvas.Left="680" Canvas.Top="220" Width="90" Height="180" Fill="#3d2b1f" Stroke="#8b5a2b" StrokeThickness="8"/>
+
+            
+            <TextBlock Canvas.Left="30" Canvas.Top="415" FontSize="55" Text="🌵"/>
+            <TextBlock Canvas.Left="795" Canvas.Top="415" FontSize="48" Text="🎩"/>
 
             
             <TextBlock x:Name="message" Canvas.Top="30" Canvas.Left="50" Width="820" 
@@ -30,16 +45,45 @@
                        Text="🛏️" MouseDown="Bed_MouseDown"/>
 
             
-            <TextBlock x:Name="pistol" Canvas.Left="420" Canvas.Top="320" FontSize="70" 
-                       Text="🔫" MouseDown="Pistol_MouseDown"/>
+            <TextBlock x:Name="pistol" Canvas.Left="185" Canvas.Top="285" FontSize="48" 
+                       Text="🔫" MouseDown="Pistol_MouseDown" Opacity="1" IsHitTestVisible="True"/>
+
+            
+            <TextBlock x:Name="bullet1" Canvas.Left="310" Canvas.Top="395" FontSize="32" 
+                       Text="🔴" MouseDown="Bullet1_MouseDown" Opacity="0.3" IsHitTestVisible="False"/>
+
+            <TextBlock x:Name="bullet2" Canvas.Left="705" Canvas.Top="325" FontSize="32" 
+                       Text="🔴" MouseDown="Bullet2_MouseDown" Opacity="0.3" IsHitTestVisible="False"/>
+
+            <TextBlock x:Name="bullet3" Canvas.Left="200" Canvas.Top="355" FontSize="32" 
+                       Text="🔴" MouseDown="Bullet3_MouseDown" Opacity="0.3" IsHitTestVisible="False"/>
         </Canvas>
 
         
         <Border Grid.Row="2" Background="#3d2b1f" BorderBrush="#8b5a2b" BorderThickness="8" Padding="15">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="Inventář: " FontSize="24" Foreground="#f5d9b0" VerticalAlignment="Center" Margin="0,0,20,0"/>
-                <TextBlock x:Name="invPistol" FontSize="50" Text="⬜"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBlock Text="Inventář: " 
+                           FontSize="26" 
+                           Foreground="#f5d9b0" 
+                           VerticalAlignment="Center" 
+                           Margin="0,0,25,0" />
+
+                
+                <TextBlock x:Name="invSlot1" FontSize="50" Text="⬜" Margin="0,0,12,0" VerticalAlignment="Center"/>
+
+                
+                <TextBlock x:Name="invSlot2" FontSize="50" Text="⬜" Margin="0,0,12,0" VerticalAlignment="Center"/>
+
+                
+                <TextBlock x:Name="invSlot3" FontSize="50" Text="⬜" Margin="0,0,12,0" VerticalAlignment="Center"/>
+
+                
+                <TextBlock x:Name="invSlot4" FontSize="50" Text="⬜" Margin="0,0,12,0" VerticalAlignment="Center"/>
+
+                
+                <TextBlock x:Name="invSlot5" FontSize="50" Text="⬜" VerticalAlignment="Center"/>
             </StackPanel>
         </Border>
-   </Grid>
-   </Window>
+    </Grid>
+</Window>
