@@ -9,9 +9,9 @@ Pokracoval jsem s programováním tlačítek, tentokrát jsem pridal 3 naboje kt
 Pistol nove mizi i nobeje ale postel pochopitelne ne.
 Pridán inventář pro predmnety s celkem pěti policky.     
 Pridani moznosti prvne sebrat pistoli a az pak vstat z postele(mozno i klasicky naoipak).
-
-
-
+///
+Tady ted chybí spousta zápisů které zde chybí z důvodu nefunkčnosti školního internetu. Také došlo ke zpoždění celého projektu.
+///
 
 
 
