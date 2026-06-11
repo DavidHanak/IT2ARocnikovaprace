@@ -1,0 +1,413 @@
+﻿<Window x:Class="ProjektIT2A1.HraWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="🌵 Šerif Adam - Western Polda"
+        Height="650"
+        Width="950"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#8b5a2b" Padding="10">
+            <TextBlock Text="🌵 ŠERIF ADAM 🌵"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="#f5d9b0"
+                       HorizontalAlignment="Center"/>
+        </Border>
+
+        <Canvas x:Name="scene"
+                Grid.Row="1"
+                Background="#5c4033">
+
+            <Rectangle x:Name="ground"
+                       Canvas.Top="380"
+                       Width="3000"
+                       Height="300"
+                       Fill="#8b5a2b"
+                       Opacity="0.6"/>
+
+            <Rectangle x:Name="tableTop"
+                       Canvas.Left="150"
+                       Canvas.Top="320"
+                       Width="120"
+                       Height="20"
+                       Fill="#3d2b1f"/>
+
+            <Rectangle x:Name="tableLeg1"
+                       Canvas.Left="170"
+                       Canvas.Top="340"
+                       Width="15"
+                       Height="60"
+                       Fill="#3d2b1f"/>
+
+            <Rectangle x:Name="tableLeg2"
+                       Canvas.Left="240"
+                       Canvas.Top="340"
+                       Width="15"
+                       Height="60"
+                       Fill="#3d2b1f"/>
+
+            <Rectangle x:Name="door"
+                       Canvas.Left="680"
+                       Canvas.Top="220"
+                       Width="90"
+                       Height="180"
+                       Fill="#3d2b1f"
+                       Stroke="#8b5a2b"
+                       StrokeThickness="8"
+                       MouseDown="Door_MouseDown"/>
+
+            <TextBlock x:Name="insideCactus"
+                       Canvas.Left="30"
+                       Canvas.Top="415"
+                       FontSize="55"
+                       Text="🌵"/>
+
+            <TextBlock x:Name="hat"
+                       Canvas.Left="795"
+                       Canvas.Top="415"
+                       FontSize="48"
+                       Text="🎩"/>
+
+            <TextBlock x:Name="message"
+                       Canvas.Top="30"
+                       Canvas.Left="50"
+                       Width="820"
+                       TextWrapping="Wrap"
+                       FontSize="24"
+                       Foreground="#f5d9b0"
+                       Background="#80000000"
+                       Padding="20"
+                       TextAlignment="Center"
+                       Panel.ZIndex="10"/>
+
+            <TextBlock x:Name="bed"
+                       Canvas.Left="80"
+                       Canvas.Top="280"
+                       FontSize="90"
+                       Text="🛏️"
+                       MouseDown="Bed_MouseDown"/>
+
+            <TextBlock x:Name="pistol"
+                       Canvas.Left="185"
+                       Canvas.Top="285"
+                       FontSize="48"
+                       Text="🔫"
+                       MouseDown="Pistol_MouseDown"/>
+
+            <TextBlock x:Name="bullet1"
+                       Canvas.Left="310"
+                       Canvas.Top="395"
+                       FontSize="32"
+                       Text="🔴"
+                       MouseDown="Bullet_MouseDown"
+                       Opacity="0.3"
+                       IsHitTestVisible="False"/>
+
+            <TextBlock x:Name="bullet2"
+                       Canvas.Left="705"
+                       Canvas.Top="325"
+                       FontSize="32"
+                       Text="🔴"
+                       MouseDown="Bullet_MouseDown"
+                       Opacity="0.3"
+                       IsHitTestVisible="False"/>
+
+            <TextBlock x:Name="bullet3"
+                       Canvas.Left="200"
+                       Canvas.Top="355"
+                       FontSize="32"
+                       Text="🔴"
+                       MouseDown="Bullet_MouseDown"
+                       Opacity="0.3"
+                       IsHitTestVisible="False"/>
+
+            <TextBlock x:Name="sun"
+                       Canvas.Left="820"
+                       Canvas.Top="20"
+                       FontSize="90"
+                       Text="☀️"
+                       Visibility="Hidden"/>
+
+            <TextBlock x:Name="horse"
+                       Canvas.Left="250"
+                       Canvas.Top="280"
+                       FontSize="100"
+                       Text="🐎"
+                       Visibility="Hidden"
+                       MouseDown="Horse_MouseDown"/>
+
+            <TextBlock x:Name="outsideCactus"
+                       Canvas.Left="80"
+                       Canvas.Top="300"
+                       FontSize="90"
+                       Text="🌵"
+                       Visibility="Hidden"/>
+
+            <Rectangle x:Name="magickeDvere"
+                       Canvas.Left="680"
+                       Canvas.Top="220"
+                       Width="90"
+                       Height="180"
+                       Fill="#3d2b1f" 
+                       Stroke="#8b5a2b"
+                       StrokeThickness="8"
+                       Visibility="Hidden"/>
+
+            <TextBlock x:Name="bandit"
+                       Canvas.Left="450"
+                       Canvas.Top="270"
+                       FontSize="100"
+                       Text="🦹"
+                       Visibility="Hidden"/>
+
+            <Rectangle x:Name="barCounter"
+                       Canvas.Left="200"
+                       Canvas.Top="320"
+                       Width="550"
+                       Height="40"
+                       Fill="#4a2e1b"
+                       Visibility="Collapsed"/>
+
+            <TextBlock x:Name="whiskeyGlass"
+                       Canvas.Left="450"
+                       Canvas.Top="250"
+                       FontSize="70"
+                       Text="🥃"
+                       Cursor="Hand"
+                       Visibility="Collapsed"
+                       MouseDown="WhiskeyGlass_MouseDown"/>
+
+            <Rectangle x:Name="sandStormOverlay"
+                       Width="950"
+                       Height="510"
+                       Fill="#c29d66"
+                       Opacity="0.85"
+                       Visibility="Collapsed"
+                       Panel.ZIndex="5"/>
+
+            <Button x:Name="btnShootHorse"
+                    Content="🔫 Zastřelit"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="600"
+                    Canvas.Top="120"
+                    Visibility="Hidden"
+                    Click="BtnShootHorse_Click"/>
+
+            <Button x:Name="btnTameHorse"
+                    Content="🤝 Ochočit"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="600"
+                    Canvas.Top="170"
+                    Visibility="Hidden"
+                    Click="BtnTameHorse_Click"/>
+
+            <Button x:Name="btnScareHorse"
+                    Content="💥 Zahnat"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="600"
+                    Canvas.Top="220"
+                    Visibility="Hidden"
+                    Click="BtnScareHorse_Click"/>
+
+            <Button x:Name="btnRunAway"
+                    Content="🏃 Utéct"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="780"
+                    Canvas.Top="120"
+                    Visibility="Hidden"
+                    Click="BtnRunAway_Click"/>
+
+            <Button x:Name="btnRideHorse"
+                    Content="🐎 Ujet na koni"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="780"
+                    Canvas.Top="170"
+                    Visibility="Hidden"
+                    Click="BtnRideHorse_Click"/>
+
+            <Button x:Name="btnShootBandit"
+                    Content="💥 Zastřelit ho"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="780"
+                    Canvas.Top="220"
+                    Visibility="Hidden"
+                    Click="BtnShootBandit_Click"/>
+
+            <Button x:Name="btnBargain"
+                    Content="💬 Usmlouvat ho"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="780"
+                    Canvas.Top="270"
+                    Visibility="Hidden"
+                    Click="BtnBargain_Click"/>
+
+            <Button x:Name="btnBargainEmotions"
+                    Content="😭 Hrát na city"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="780"
+                    Canvas.Top="320"
+                    Visibility="Hidden"
+                    Click="BtnBargainEmotions_Click"/>
+
+            <Button x:Name="btnBargainAggressive"
+                    Content="😠 Tlačit agresivně"
+                    Width="140"
+                    Height="40"
+                    Canvas.Left="780"
+                    Canvas.Top="370"
+                    Visibility="Hidden"
+                    Click="BtnBargainAggressive_Click"/>
+
+            <Button x:Name="btnContinue"
+                    Content="⏩ Pokračovat..."
+                    Width="180"
+                    Height="45"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Background="#27ae60"
+                    Foreground="White"
+                    Canvas.Left="385"
+                    Canvas.Top="180"
+                    Visibility="Hidden"
+                    Panel.ZIndex="15"
+                    Click="BtnContinue_Click"/>
+
+            <Border x:Name="mainMenu"
+                    Width="950"
+                    Height="510"
+                    Background="#3d2b1f"
+                    Canvas.Left="0"
+                    Canvas.Top="0"
+                    Panel.ZIndex="20"
+                    Visibility="Visible">
+
+                <Grid>
+                    <StackPanel x:Name="menuButtonsPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Visible">
+                        <TextBlock Text="VÍTEJTE VE DIVOKÉM ZÁPADĚ" 
+                                   FontSize="36" 
+                                   FontWeight="Bold" 
+                                   Foreground="#f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,50"/>
+
+                        <Button x:Name="btnStartGame"
+                                Content="▶️ Spustit hru"
+                                Width="220"
+                                Height="50"
+                                FontSize="18"
+                                FontWeight="Bold"
+                                Background="#8b5a2b"
+                                Foreground="#f5d9b0"
+                                Margin="0,0,0,20"
+                                Click="BtnStartGame_Click"/>
+
+                        <Button x:Name="btnGameDetails"
+                                Content="ℹ️ Podrobnosti o hře"
+                                Width="220"
+                                Height="50"
+                                FontSize="18"
+                                FontWeight="Bold"
+                                Background="#8b5a2b"
+                                Foreground="#f5d9b0"
+                                Click="BtnGameDetails_Click"/>
+                    </StackPanel>
+
+                    <StackPanel x:Name="detailsPanel" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Collapsed">
+                        <TextBlock Text="PODROBNOSTI O HŘE" 
+                                   FontSize="26" 
+                                   FontWeight="Bold" 
+                                   Foreground="#8b5a2b" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,20"/>
+
+                        <TextBlock Text="Název Hry: Šerif Adam aneb Divoké dobrodružství na divokém západě! (Polda ve western stylu)." 
+                                   FontSize="16" 
+                                   Foreground="#f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   TextAlignment="Center"
+                                   Width="750"
+                                   Margin="0,0,0,15"/>
+
+                        <TextBlock Text="Námět: David Hanák" 
+                                   FontSize="16" 
+                                   Foreground="#f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Vedoucí produkce: David Hanák" 
+                                   FontSize="16" 
+                                   Foreground="#f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Scénář: David Hanák" 
+                                   FontSize="16" 
+                                   Foreground="#f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,5"/>
+
+                        <TextBlock Text="Design: David Hanák" 
+                                   FontSize="16" 
+                                   Foreground="#f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,15"/>
+
+                        <TextBlock Text="Dále spolupracovali: Chat GPT, Google Gemini a další." 
+                                   FontSize="15" 
+                                   FontStyle="Italic"
+                                   Foreground="#a0f5d9b0" 
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,30"/>
+
+                        <Button x:Name="btnBackToMenu"
+                                Content="⬅️ Zpět"
+                                Width="150"
+                                Height="40"
+                                FontSize="16"
+                                Background="#8b5a2b"
+                                Foreground="#f5d9b0"
+                                Click="BtnBackToMenu_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Canvas>
+
+        <Border Grid.Row="2"
+                Background="#3d2b1f"
+                BorderBrush="#8b5a2b"
+                BorderThickness="8"
+                Padding="15">
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+
+                <TextBlock Text="Inventář:"
+                           FontSize="26"
+                           Foreground="#f5d9b0"
+                           Margin="0,0,25,0"/>
+
+                <TextBlock x:Name="invSlot1" FontSize="50" Text="⬜" Margin="5"/>
+                <TextBlock x:Name="invSlot2" FontSize="50" Text="🔴" Margin="5"/>
+                <TextBlock x:Name="invSlot3" FontSize="50" Text="🔴" Margin="5"/>
+                <TextBlock x:Name="invSlot4" FontSize="50" Text="🔴" Margin="5"/>
+                <TextBlock x:Name="invSlot5" FontSize="50" Text="⬜" Margin="5"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

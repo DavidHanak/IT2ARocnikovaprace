@@ -1,0 +1,38 @@
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.exe
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.deps.json
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.runtimeconfig.json
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.dll
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.pdb
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1_MarkupCompile.cache
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.g.resources
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.AssemblyInfoInputs.cache
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.AssemblyInfo.cs
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.csproj.CoreCompileInputs.cache
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.dll
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\refint\ProjekIT2A1.dll
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.pdb
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.genruntimeconfig.cache
+C:\Users\hanak\source\repos\ProjekIT2A1\ProjekIT2A1\obj\Debug\net8.0-windows\ref\ProjekIT2A1.dll
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\HraWindow.baml
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\HraWindow.g.cs
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\App.g.cs
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1_MarkupCompile.cache
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.g.resources
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.AssemblyInfoInputs.cache
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.AssemblyInfo.cs
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.csproj.CoreCompileInputs.cache
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.exe
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.deps.json
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.runtimeconfig.json
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.dll
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\bin\Debug\net8.0-windows\ProjekIT2A1.pdb
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.dll
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\refint\ProjekIT2A1.dll
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.pdb
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ProjekIT2A1.genruntimeconfig.cache
+D:\Škola\David\Střední\CSharp\Nová složka\ProjekIT2A1\obj\Debug\net8.0-windows\ref\ProjekIT2A1.dll
