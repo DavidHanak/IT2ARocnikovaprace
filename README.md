@@ -12,7 +12,7 @@ Pridani moznosti prvne sebrat pistoli a az pak vstat z postele(mozno i klasicky 
 ///
 Tady ted chybí spousta zápisů které zde chybí z důvodu nefunkčnosti školního internetu. Také došlo ke zpoždění celého projektu.
 ///
-
+https://sstebrnocz-my.sharepoint.com/:p:/r/personal/61800hanak_student_sstebrno_cz/Documents/Presentation%203.pptx?d=w1d7887b75ef44e2aa0283af9fdd19676&csf=1&web=1&e=v8f9K5
 
 
 
